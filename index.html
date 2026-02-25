@@ -3,597 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ZenClass – Landing Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <title>Trabook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css">
-  
 </head>
 <body>
 
-
-<nav>
-  <div class="nav-logo">Zen<span>Class</span></div>
-  <div class="nav-links">
-    <a href="#" class="dropdown active">Courses</a>
-    <a href="#">Instructors</a>
-    <a href="#">Students</a>
-    <a href="#" class="dropdown">Pages</a>
-    <a href="#" class="dropdown">Resources</a>
-    <a href="#">Blog</a>
-  </div>
-  <div class="nav-right">
-    <button class="btn-outline">Log in</button>
-    <button class="btn-fill">Sign up</button>
-  </div>
-</nav>
-
-
-<section class="hero">
-  <div class="hero-left">
-    <div class="hero-tag">
-      <span>🎉</span> New to ZenClass? <strong style="margin-left:4px">Start for Free</strong>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      Trabook
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4C12 4 6 10 6 18c0 10 14 22 14 22s14-12 14-22c0-8-6-14-14-14z" fill="#E87722" opacity="0.8"/>
+        <circle cx="20" cy="18" r="5" fill="#fff"/>
+      </svg>
     </div>
-    <h1>Improve Your Skills &<br>Advance Your <em>Career</em></h1>
-    <p>Access to 200+ best online courses, learning paths for all levels. Join thousands of learners and start today.</p>
-    <div class="hero-actions">
-      <button class="btn-hero-primary">Get Started Today</button>
-      <a href="#" class="btn-hero-secondary">
-        <div class="play-btn">
-          <svg width="14" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 8L1 1v14l12-7z" fill="#7B2FBE"/>
-          </svg>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Destination</a></li>
+      <li><a href="#">Tour</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="btn-login">Login</button>
+      <button class="btn-signup">Sign up</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>
+        Get started your<br>
+        exciting <span class="orange">journey</span><br>
+        with us.
+      </h1>
+      <p>A Team of experienced tourism professionals will<br>provide you with the best advice and tips for your<br>desire place.</p>
+      <button class="btn-discover">Discover Now</button>
+    </div>
+
+    <div class="hero-right">
+      <!-- Airplane icons -->
+      <svg class="plane plane-1" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M58 15L2 2l8 13-8 13 56-13z" fill="#ccc" opacity="0.7"/>
+      </svg>
+      <svg class="plane plane-2" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M58 15L2 2l8 13-8 13 56-13z" fill="#ccc" opacity="0.7"/>
+      </svg>
+      <svg class="plane plane-3" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M58 15L2 2l8 13-8 13 56-13z" fill="#ccc" opacity="0.6"/>
+      </svg>
+
+      <!-- Orange circle background -->
+      <div class="hero-circle"></div>
+
+      <!-- Person image from Unsplash - traveler with hat and luggage -->
+      <img
+        class="hero-person-img"
+        src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=600&auto=format&fit=crop&q=80"
+        alt="Traveler"
+      />
+
+      <!-- Floating card: Best Tour Awards -->
+      <div class="card card-award">
+        <span class="award-icon">🏆</span>
+        <div class="card-title">Best Tour<br>Awards</div>
+      </div>
+
+      <!-- Floating card: Explore -->
+      <div class="card card-explore">
+        <svg class="map-pin gmaps-pin" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="20" fill="#fff"/>
+          <path d="M20 6C14.477 6 10 10.477 10 16c0 7.5 10 18 10 18s10-10.5 10-18c0-5.523-4.477-10-10-10z" fill="#EA4335"/>
+          <circle cx="20" cy="16" r="4" fill="#fff"/>
+          <path d="M20 6C14.477 6 10 10.477 10 16c0 2.5.9 4.8 2.4 6.6L20 34l7.6-11.4C29.1 20.8 30 18.5 30 16c0-5.523-4.477-10-10-10z" fill="url(#gmap_grad)"/>
+          <defs>
+            <linearGradient id="gmap_grad" x1="10" y1="6" x2="30" y2="34" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#4285F4"/>
+              <stop offset="33%" stop-color="#34A853"/>
+              <stop offset="66%" stop-color="#FBBC05"/>
+              <stop offset="100%" stop-color="#EA4335"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="card-explore-text">
+          <div class="title">Explore</div>
+          <div class="sub">Every corner of<br>the world with us</div>
         </div>
-        Watch Video
-      </a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num">200+</span>
-        <span class="stat-label">Online Courses</span>
       </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <span class="stat-num">15k+</span>
-        <span class="stat-label">Active Students</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat">
-        <span class="stat-num">50+</span>
-        <span class="stat-label">Expert Instructors</span>
-      </div>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-img-wrapper">
-      
-      <div class="badge badge-lessons">
-        <div class="badge-icon purple">📚</div>
+
+      <!-- Floating card: 27K Customer Reviews -->
+      <div class="card card-reviews">
+        <span class="star">⭐</span>
         <div>
-          <div class="badge-text-top">200+</div>
-          <div class="badge-text-bot">Online Lessons</div>
+          <div class="rev-num">27K</div>
+          <div class="rev-label">Customer Reviewd</div>
         </div>
       </div>
-      <div class="badge badge-rating">
-        <div class="badge-icon orange">⭐</div>
-        <div>
-          <div class="badge-text-top">4.9/5</div>
-          <div class="badge-text-bot">Average Rating</div>
+    </div>
+  </section>
+
+  <!-- SEARCH BAR -->
+  <div class="search-wrapper">
+    <div class="search-bar">
+      <div class="search-field">
+        <div class="field-label">
+          Location <span class="arrow">▾</span>
         </div>
+        <div class="field-sub">Where are you going</div>
       </div>
-      <div class="badge badge-students">
-        <div class="badge-icon green">👨‍🎓</div>
-        <div>
-          <div class="badge-text-top">15,000+</div>
-          <div class="badge-text-bot">Happy Students</div>
+      <div class="search-field">
+        <div class="field-label">
+          Date <span class="arrow">▾</span>
         </div>
+        <div class="field-sub">When you will go</div>
       </div>
-      
-      <div style="width:420px; height:420px; background: linear-gradient(135deg,#C4A0F0 0%,#7B2FBE 100%); border-radius:16px 16px 0 0; display:flex; align-items:flex-end; justify-content:center; overflow:hidden;">
-        <div style="font-size:200px; line-height:1; margin-bottom:-20px; filter:drop-shadow(0 -4px 16px rgba(0,0,0,0.2));">👩‍💻</div>
+      <div class="search-field" style="border-right:none; margin-right: 32px;">
+        <div class="field-label">
+          Guest <span class="arrow">▾</span>
+        </div>
+        <div class="field-sub">Number of guest</div>
       </div>
+      <button class="btn-explore-now">Explore Now</button>
     </div>
   </div>
-</section>
-
-
-<section class="companies">
-  <p>Trusted by 1000+ students from top companies</p>
-  <div class="companies-logos">
-    <span class="company-logo">Google</span>
-    <span class="company-logo">Microsoft</span>
-    <span class="company-logo">Netflix</span>
-    <span class="company-logo">Airbnb</span>
-    <span class="company-logo">Amazon</span>
-    <span class="company-logo">GUVI</span>
-  </div>
-</section>
-
-
-<section class="section categories">
-  <div class="section-header">
-    <div class="section-tag">Our Top Categories</div>
-    <h2 class="section-title">Browse Our Top <em>Categories</em></h2>
-    <p class="section-sub">Explore a wide range of topics and find the perfect course that aligns with your goals.</p>
-  </div>
-  <div class="cat-grid">
-    <div class="cat-card">
-      <div class="cat-icon purple" style="background:#EDE4F9">💻</div>
-      <div class="cat-info">
-        <h4>Web Development</h4>
-        <p>12 Courses</p>
-      </div>
-    </div>
-    <div class="cat-card">
-      <div class="cat-icon" style="background:#FFF0EB">🎨</div>
-      <div class="cat-info">
-        <h4>UI/UX Design</h4>
-        <p>8 Courses</p>
-      </div>
-    </div>
-    <div class="cat-card">
-      <div class="cat-icon" style="background:#E7F5FF">📊</div>
-      <div class="cat-info">
-        <h4>Data Science</h4>
-        <p>10 Courses</p>
-      </div>
-    </div>
-    <div class="cat-card">
-      <div class="cat-icon" style="background:#E2F5E4">📱</div>
-      <div class="cat-info">
-        <h4>Mobile Development</h4>
-        <p>6 Courses</p>
-      </div>
-    </div>
-    <div class="cat-card">
-      <div class="cat-icon" style="background:#FFF8E1">🤖</div>
-      <div class="cat-info">
-        <h4>Artificial Intelligence</h4>
-        <p>9 Courses</p>
-      </div>
-    </div>
-    <div class="cat-card">
-      <div class="cat-icon" style="background:#FCE4EC">🔐</div>
-      <div class="cat-info">
-        <h4>Cyber Security</h4>
-        <p>5 Courses</p>
-      </div>
-    </div>
-    <div class="cat-card">
-      <div class="cat-icon" style="background:#E8EAF6">☁️</div>
-      <div class="cat-info">
-        <h4>Cloud Computing</h4>
-        <p>7 Courses</p>
-      </div>
-    </div>
-    <div class="cat-card">
-      <div class="cat-icon" style="background:#E0F7FA">📈</div>
-      <div class="cat-info">
-        <h4>Digital Marketing</h4>
-        <p>11 Courses</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section courses">
-  <div class="courses-header">
-    <div>
-      <div class="section-tag">Featured Courses</div>
-      <h2 class="section-title" style="text-align:left">Our Most <em>Popular</em> Courses</h2>
-    </div>
-    <div class="tab-group">
-      <button class="tab active">All</button>
-      <button class="tab">Web Dev</button>
-      <button class="tab">Design</button>
-      <button class="tab">Data Science</button>
-    </div>
-  </div>
-  <div class="courses-grid">
-    
-    <div class="course-card">
-      <div class="course-thumb thumb-1">
-        <div class="thumb-emoji">🌐</div>
-        <span class="course-badge badge-best">Best Seller</span>
-      </div>
-      <div class="course-body">
-        <div class="course-cat">Web Development</div>
-        <div class="course-title">Complete HTML, CSS & JavaScript Bootcamp 2024</div>
-        <div class="course-meta">
-          <span>📖 12 Lessons</span>
-          <span>⏱ 6h 30m</span>
-        </div>
-        <div class="course-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-num">4.9</span>
-          <span class="rating-count">(1.2k reviews)</span>
-        </div>
-        <div class="course-footer">
-          <div>
-            <span class="course-price">₹499 <span class="old">₹999</span></span>
-          </div>
-          <div class="course-instructor">
-            <div style="width:28px;height:28px;border-radius:50%"><div class="av av-purple">A</div></div>
-            <span class="instructor-name">Arun Kumar</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="course-card">
-      <div class="course-thumb thumb-2">
-        <div class="thumb-emoji">🎨</div>
-        <span class="course-badge badge-new">New</span>
-      </div>
-      <div class="course-body">
-        <div class="course-cat">UI/UX Design</div>
-        <div class="course-title">Figma Masterclass: Design Beautiful Products</div>
-        <div class="course-meta">
-          <span>📖 18 Lessons</span>
-          <span>⏱ 9h 15m</span>
-        </div>
-        <div class="course-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-num">4.8</span>
-          <span class="rating-count">(980 reviews)</span>
-        </div>
-        <div class="course-footer">
-          <div>
-            <span class="course-price">₹599 <span class="old">₹1199</span></span>
-          </div>
-          <div class="course-instructor">
-            <div style="width:28px;height:28px;border-radius:50%"><div class="av av-orange">P</div></div>
-            <span class="instructor-name">Priya Singh</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="course-card">
-      <div class="course-thumb thumb-3">
-        <div class="thumb-emoji">🤖</div>
-        <span class="course-badge badge-pop">Popular</span>
-      </div>
-      <div class="course-body">
-        <div class="course-cat">Data Science</div>
-        <div class="course-title">Python & Machine Learning: Zero to Hero</div>
-        <div class="course-meta">
-          <span>📖 24 Lessons</span>
-          <span>⏱ 14h 00m</span>
-        </div>
-        <div class="course-rating">
-          <span class="stars">★★★★★</span>
-          <span class="rating-num">4.9</span>
-          <span class="rating-count">(2.1k reviews)</span>
-        </div>
-        <div class="course-footer">
-          <div>
-            <span class="course-price">₹699 <span class="old">₹1499</span></span>
-          </div>
-          <div class="course-instructor">
-            <div style="width:28px;height:28px;border-radius:50%"><div class="av av-green">R</div></div>
-            <span class="instructor-name">Ravi Verma</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="course-card">
-      <div class="course-thumb thumb-4">
-        <div class="thumb-emoji">📱</div>
-        <span class="course-badge badge-best">Best Seller</span>
-      </div>
-      <div class="course-body">
-        <div class="course-cat">Mobile Development</div>
-        <div class="course-title">React Native: Build Mobile Apps with JavaScript</div>
-        <div class="course-meta">
-          <span>📖 20 Lessons</span>
-          <span>⏱ 11h 45m</span>
-        </div>
-        <div class="course-rating">
-          <span class="stars">★★★★☆</span>
-          <span class="rating-num">4.7</span>
-          <span class="rating-count">(765 reviews)</span>
-        </div>
-        <div class="course-footer">
-          <div>
-            <span class="course-price">₹549 <span class="old">₹1099</span></span>
-          </div>
-          <div class="course-instructor">
-            <div style="width:28px;height:28px;border-radius:50%"><div class="av av-sky">S</div></div>
-            <span class="instructor-name">Sneha Nair</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button class="view-all-btn">View All Courses</button>
-</section>
-
-
-<section class="instructor-section">
-  <div class="instructor-inner">
-    <div class="instructor-left">
-      <div class="section-tag">Become an Instructor</div>
-      <h2 class="section-title">Share Your Knowledge &<br>Inspire <em>Learners</em></h2>
-      <p>Join 50+ expert instructors on ZenClass. Create your own courses, reach thousands of students, and earn while doing what you love.</p>
-      <div style="display:flex;gap:16px">
-        <button class="btn-hero-primary">Start Teaching Today</button>
-      </div>
-      <div style="display:flex;gap:32px;margin-top:40px">
-        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Expert Instructors</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Courses Created</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">15k+</span><span class="stat-label">Students Reached</span></div>
-      </div>
-    </div>
-    <div class="instructor-right">
-      <div class="instructor-cards">
-        <div class="ins-card">
-          <div class="ins-card-thumb" style="background: linear-gradient(135deg,#C4A0F0,#9B59E0)"><span style="font-size:64px">👨‍🏫</span></div>
-          <div class="ins-card-body">
-            <div class="ins-card-name">Arun Kumar</div>
-            <div class="ins-card-role">Web Developer</div>
-            <div class="ins-card-rating"><span class="stars">★★★★★</span> 4.9 · 8 Courses</div>
-          </div>
-        </div>
-        <div class="ins-card">
-          <div class="ins-card-thumb" style="background: linear-gradient(135deg,#7B9FFF,#564FFD)"><span style="font-size:64px">👩‍💻</span></div>
-          <div class="ins-card-body">
-            <div class="ins-card-name">Sneha Nair</div>
-            <div class="ins-card-role">Mobile Developer</div>
-            <div class="ins-card-rating"><span class="stars">★★★★★</span> 4.7 · 5 Courses</div>
-          </div>
-        </div>
-      </div>
-      <div class="instructor-cards" style="margin-top:0">
-        <div class="ins-card">
-          <div class="ins-card-thumb" style="background: linear-gradient(135deg,#FFB347,#FF6636)"><span style="font-size:64px">👩‍🎨</span></div>
-          <div class="ins-card-body">
-            <div class="ins-card-name">Priya Singh</div>
-            <div class="ins-card-role">UI/UX Designer</div>
-            <div class="ins-card-rating"><span class="stars">★★★★★</span> 4.8 · 6 Courses</div>
-          </div>
-        </div>
-        <div class="ins-card">
-          <div class="ins-card-thumb" style="background: linear-gradient(135deg,#56E37E,#23BD33)"><span style="font-size:64px">🧑‍🔬</span></div>
-          <div class="ins-card-body">
-            <div class="ins-card-name">Ravi Verma</div>
-            <div class="ins-card-role">Data Scientist</div>
-            <div class="ins-card-rating"><span class="stars">★★★★★</span> 4.9 · 7 Courses</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="why-section">
-  <div class="why-inner">
-    <div class="why-image">
-      <div class="why-img-placeholder">
-        <span style="font-size:160px;opacity:0.4;position:absolute">📖</span>
-        <div style="position:absolute;bottom:24px;right:-20px;background:#fff;border-radius:12px;padding:14px 18px;box-shadow:0 4px 20px rgba(0,0,0,0.1);display:flex;align-items:center;gap:10px">
-          <div style="background:var(--purple-light);border-radius:8px;padding:8px;font-size:20px">🏆</div>
-          <div><div style="font-size:15px;font-weight:700;color:var(--text-dark)">Award Winning</div><div style="font-size:12px;color:var(--text-light)">Best Platform 2024</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="why-content">
-      <div class="section-tag">Why Choose Us</div>
-      <h2 class="section-title">Unlock Your <em>Potential</em><br>With ZenClass</h2>
-      <div class="why-list" style="margin-top:24px">
-        <div class="why-item">
-          <div class="why-icon">🎯</div>
-          <div class="why-text">
-            <h4>Expert Instructors</h4>
-            <p>Learn from industry professionals with real-world experience and proven track records.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">📜</div>
-          <div class="why-text">
-            <h4>Certification Programs</h4>
-            <p>Earn recognized certificates upon completion that boost your resume and career.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">🕐</div>
-          <div class="why-text">
-            <h4>Learn at Your Own Pace</h4>
-            <p>Access courses anytime, anywhere, and learn on a schedule that fits your lifestyle.</p>
-          </div>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">🤝</div>
-          <div class="why-text">
-            <h4>Community Support</h4>
-            <p>Join a community of learners and get support from peers and mentors around the globe.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section testimonials">
-  <div class="section-header">
-    <div class="section-tag">Testimonials</div>
-    <h2 class="section-title">What Our <em>Students</em> Say</h2>
-    <p class="section-sub">Thousands of students have transformed their careers with ZenClass. Here's what they say.</p>
-  </div>
-  <div class="test-grid">
-    <div class="test-card">
-      <div class="test-header">
-        <div class="test-user">
-          <div class="test-avatar" style="background:var(--purple-light)">😊</div>
-          <div>
-            <div class="test-name">Kavitha R.</div>
-            <div class="test-role">Frontend Developer</div>
-          </div>
-        </div>
-        <div class="test-quote">"</div>
-      </div>
-      <div class="test-body">The Web Development Bootcamp was incredibly detailed. I landed my first developer job within 3 months of completing it. ZenClass truly delivers on its promises.</div>
-      <div class="test-footer">
-        <span class="stars">★★★★★</span>
-        <span class="test-course">Web Development</span>
-      </div>
-    </div>
-    <div class="test-card" style="border-color:var(--purple)">
-      <div class="test-header">
-        <div class="test-user">
-          <div class="test-avatar" style="background:#FFF0EB">🎓</div>
-          <div>
-            <div class="test-name">Manoj S.</div>
-            <div class="test-role">Data Analyst</div>
-          </div>
-        </div>
-        <div class="test-quote" style="opacity:1;color:var(--purple)">"</div>
-      </div>
-      <div class="test-body">The Python & ML course is hands-on and very practical. The instructor explains complex concepts in a simple manner. Best investment I made for my career!</div>
-      <div class="test-footer">
-        <span class="stars">★★★★★</span>
-        <span class="test-course">Data Science</span>
-      </div>
-    </div>
-    <div class="test-card">
-      <div class="test-header">
-        <div class="test-user">
-          <div class="test-avatar" style="background:#E2F5E4">✨</div>
-          <div>
-            <div class="test-name">Divya M.</div>
-            <div class="test-role">UI/UX Designer</div>
-          </div>
-        </div>
-        <div class="test-quote">"</div>
-      </div>
-      <div class="test-body">I transitioned from graphic design to UX design thanks to ZenClass's Figma Masterclass. The curriculum is up-to-date and very relevant to real projects.</div>
-      <div class="test-footer">
-        <span class="stars">★★★★★</span>
-        <span class="test-course">UI/UX Design</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section pricing">
-  <div class="section-header">
-    <div class="section-tag">Pricing Plans</div>
-    <h2 class="section-title">Choose Your <em>Plan</em></h2>
-    <p class="section-sub">Start for free or unlock unlimited access with our Pro and Enterprise plans.</p>
-  </div>
-  <div class="pricing-grid">
-    <div class="price-card">
-      <div class="price-plan">Free</div>
-      <div class="price-amount"><span>₹</span>0</div>
-      <div class="price-period">Forever free</div>
-      <ul class="price-features">
-        <li>Access to 5 Free Courses</li>
-        <li>Community Access</li>
-        <li>Certificate of Completion</li>
-        <li class="no">Live Sessions</li>
-        <li class="no">Priority Support</li>
-      </ul>
-      <button class="btn-price outline">Get Started</button>
-    </div>
-    <div class="price-card popular">
-      <span class="popular-tag">Most Popular</span>
-      <div class="price-plan">Pro</div>
-      <div class="price-amount"><span>₹</span>499</div>
-      <div class="price-period">Per month</div>
-      <ul class="price-features">
-        <li>Unlimited Course Access</li>
-        <li>Community Access</li>
-        <li>Certificate of Completion</li>
-        <li>Live Sessions</li>
-        <li>Priority Support</li>
-      </ul>
-      <button class="btn-price fill">Get Pro Access</button>
-    </div>
-    <div class="price-card">
-      <div class="price-plan">Enterprise</div>
-      <div class="price-amount"><span>₹</span>999</div>
-      <div class="price-period">Per month</div>
-      <ul class="price-features">
-        <li>Everything in Pro</li>
-        <li>Team Management</li>
-        <li>Custom Learning Paths</li>
-        <li>Dedicated Account Manager</li>
-        <li>Analytics Dashboard</li>
-      </ul>
-      <button class="btn-price outline">Contact Sales</button>
-    </div>
-  </div>
-</section>
-
-
-<section class="newsletter">
-  <h2>Subscribe to Our Newsletter</h2>
-  <p>Get the latest course updates, learning tips, and special offers straight to your inbox.</p>
-  <div class="newsletter-form">
-    <input type="email" placeholder="Enter your email address..." />
-    <button>Subscribe Now</button>
-  </div>
-</section>
-
-
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <span class="nav-logo">Zen<span>Class</span></span>
-      <p>ZenClass is your gateway to quality online education. Learn from experts, grow your skills, and advance your career with us.</p>
-      <div class="social-links">
-        <div class="social-btn">f</div>
-        <div class="social-btn">in</div>
-        <div class="social-btn">tw</div>
-        <div class="social-btn">yt</div>
-      </div>
-    </div>
-    <div class="footer-col">
-      <h4>Top Courses</h4>
-      <ul>
-        <li><a href="#">Web Development</a></li>
-        <li><a href="#">UI/UX Design</a></li>
-        <li><a href="#">Data Science</a></li>
-        <li><a href="#">Mobile Apps</a></li>
-        <li><a href="#">Cloud Computing</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Instructors</a></li>
-        <li><a href="#">Become an Instructor</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact Us</h4>
-      <ul>
-        <li><a href="#">📧 hello@zenclass.in</a></li>
-        <li><a href="#">📞 +91 98765 43210</a></li>
-        <li><a href="#">📍 Chennai, Tamil Nadu</a></li>
-        <li><a href="#">Help Center</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2024 ZenClass. All rights reserved.</p>
-    <div class="footer-bottom-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">Cookie Policy</a>
-    </div>
-  </div>
-</footer>
 
 </body>
 </html>
