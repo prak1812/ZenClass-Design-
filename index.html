@@ -3,133 +3,402 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trabook</title>
-  <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="style.css">
+  <title>Trabook - Travel Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    
+  </style>
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="logo">
-      Trabook
-      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 4C12 4 6 10 6 18c0 10 14 22 14 22s14-12 14-22c0-8-6-14-14-14z" fill="#E87722" opacity="0.8"/>
-        <circle cx="20" cy="18" r="5" fill="#fff"/>
-      </svg>
+<!-- NAVBAR -->
+<nav>
+  <a class="logo" href="#">
+    Trabook
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 8C6 6.9 6.9 6 8 6H24C25.1 6 26 6.9 26 8V18C26 24 16 30 16 30C16 30 6 24 6 18V8Z" fill="#E87722" opacity="0.18"/>
+      <path d="M11 13H21M11 17H17" stroke="#E87722" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Destination</a></li>
+    <li><a href="#">Tour</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="btn-login">Login</button>
+    <button class="btn-signup">Sign up</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <h1>Get started your<br>exciting <span class="orange">journey</span><br>with us.</h1>
+    <p>A Team of experienced tourism professionals will<br>provide you with the best advice and tips for your<br>desire place.</p>
+    <button class="btn-discover">Discover Now</button>
+  </div>
+  <div class="hero-right">
+    <!-- Plane decorations -->
+    <svg class="plane plane-1" viewBox="0 0 80 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 17.5L72 7L62 17.5L72 28L2 17.5Z" fill="#888"/>
+      <path d="M32 17.5L52 12L47 17.5L52 23L32 17.5Z" fill="#aaa"/>
+    </svg>
+    <svg class="plane plane-2" viewBox="0 0 70 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 15L62 6L53 15L62 24L2 15Z" fill="#999"/>
+    </svg>
+    <svg class="plane plane-3" viewBox="0 0 55 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 12L48 5L40 12L48 19L2 12Z" fill="#aaa"/>
+    </svg>
+    <!-- Orange circle -->
+    <div class="orange-circle"></div>
+    <!-- Traveler photo -->
+    <img class="hero-img"
+      src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=500&q=80"
+      alt="Happy traveler with luggage"/>
+    <!-- Card: Best Tour Awards -->
+    <div class="card-float card-best-tour">
+      <span class="icon">🏆</span>
+      <div class="lbl">Best Tour<br>Awards</div>
     </div>
-
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Destination</a></li>
-      <li><a href="#">Tour</a></li>
-      <li><a href="#">Blog</a></li>
-    </ul>
-
-    <div class="nav-right">
-      <button class="btn-login">Login</button>
-      <button class="btn-signup">Sign up</button>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-left">
-      <h1>
-        Get started your<br>
-        exciting <span class="orange">journey</span><br>
-        with us.
-      </h1>
-      <p>A Team of experienced tourism professionals will<br>provide you with the best advice and tips for your<br>desire place.</p>
-      <button class="btn-discover">Discover Now</button>
-    </div>
-
-    <div class="hero-right">
-      <!-- Airplane icons -->
-      <svg class="plane plane-1" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M58 15L2 2l8 13-8 13 56-13z" fill="#ccc" opacity="0.7"/>
+    <!-- Card: Explore -->
+    <div class="card-float card-explore">
+      <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="16" r="16" fill="white"/>
+        <path d="M16 6C11.6 6 8 9.6 8 14C8 20 16 26 16 26C16 26 24 20 24 14C24 9.6 20.4 6 16 6ZM16 17C14.3 17 13 15.7 13 14C13 12.3 14.3 11 16 11C17.7 11 19 12.3 19 14C19 15.7 17.7 17 16 17Z" fill="#EA4335"/>
+        <path d="M16 6C11.6 6 8 9.6 8 14" fill="#34A853" opacity="0.5"/>
       </svg>
-      <svg class="plane plane-2" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M58 15L2 2l8 13-8 13 56-13z" fill="#ccc" opacity="0.7"/>
-      </svg>
-      <svg class="plane plane-3" viewBox="0 0 60 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M58 15L2 2l8 13-8 13 56-13z" fill="#ccc" opacity="0.6"/>
-      </svg>
-
-      <!-- Orange circle background -->
-      <div class="hero-circle"></div>
-
-      <!-- Person image from Unsplash - traveler with hat and luggage -->
-      <img
-        class="hero-person-img"
-        src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=600&auto=format&fit=crop&q=80"
-        alt="Traveler"
-      />
-
-      <!-- Floating card: Best Tour Awards -->
-      <div class="card card-award">
-        <span class="award-icon">🏆</span>
-        <div class="card-title">Best Tour<br>Awards</div>
-      </div>
-
-      <!-- Floating card: Explore -->
-      <div class="card card-explore">
-        <svg class="map-pin gmaps-pin" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="20" cy="20" r="20" fill="#fff"/>
-          <path d="M20 6C14.477 6 10 10.477 10 16c0 7.5 10 18 10 18s10-10.5 10-18c0-5.523-4.477-10-10-10z" fill="#EA4335"/>
-          <circle cx="20" cy="16" r="4" fill="#fff"/>
-          <path d="M20 6C14.477 6 10 10.477 10 16c0 2.5.9 4.8 2.4 6.6L20 34l7.6-11.4C29.1 20.8 30 18.5 30 16c0-5.523-4.477-10-10-10z" fill="url(#gmap_grad)"/>
-          <defs>
-            <linearGradient id="gmap_grad" x1="10" y1="6" x2="30" y2="34" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#4285F4"/>
-              <stop offset="33%" stop-color="#34A853"/>
-              <stop offset="66%" stop-color="#FBBC05"/>
-              <stop offset="100%" stop-color="#EA4335"/>
-            </linearGradient>
-          </defs>
-        </svg>
-        <div class="card-explore-text">
-          <div class="title">Explore</div>
-          <div class="sub">Every corner of<br>the world with us</div>
-        </div>
-      </div>
-
-      <!-- Floating card: 27K Customer Reviews -->
-      <div class="card card-reviews">
-        <span class="star">⭐</span>
-        <div>
-          <div class="rev-num">27K</div>
-          <div class="rev-label">Customer Reviewd</div>
-        </div>
+      <div>
+        <div class="lbl">Explore</div>
+        <div class="sub">Every corner of<br>the world with us</div>
       </div>
     </div>
-  </section>
-
-  <!-- SEARCH BAR -->
-  <div class="search-wrapper">
-    <div class="search-bar">
-      <div class="search-field">
-        <div class="field-label">
-          Location <span class="arrow">▾</span>
-        </div>
-        <div class="field-sub">Where are you going</div>
+    <!-- Card: Reviews -->
+    <div class="card-float card-reviews">
+      <span class="star">⭐</span>
+      <div>
+        <div class="count">27K</div>
+        <div class="sub">Customer Reviewd</div>
       </div>
-      <div class="search-field">
-        <div class="field-label">
-          Date <span class="arrow">▾</span>
-        </div>
-        <div class="field-sub">When you will go</div>
-      </div>
-      <div class="search-field" style="border-right:none; margin-right: 32px;">
-        <div class="field-label">
-          Guest <span class="arrow">▾</span>
-        </div>
-        <div class="field-sub">Number of guest</div>
-      </div>
-      <button class="btn-explore-now">Explore Now</button>
     </div>
   </div>
+</section>
+
+<!-- SEARCH BAR -->
+<div class="search-wrap">
+  <div class="search-bar">
+    <div class="search-field">
+      <div class="field-label">Location <span class="field-arrow">▾</span></div>
+      <div class="field-sub">Where are you going</div>
+    </div>
+    <div class="search-field">
+      <div class="field-label">Date <span class="field-arrow">▾</span></div>
+      <div class="field-sub">When you will go</div>
+    </div>
+    <div class="search-field" style="border-right:none">
+      <div class="field-label">Guest <span class="field-arrow">▾</span></div>
+      <div class="field-sub">Number of guest</div>
+    </div>
+    <button class="search-btn">Explore Now</button>
+  </div>
+</div>
+
+<!-- THINGS TO DO -->
+<section class="things-section">
+  <div class="text-center">
+    <div class="section-tag">Category</div>
+    <h2 class="section-title">Things you need <span class="orange">to do</span></h2>
+    <p class="section-desc">We ensure that you'll embark on a journey planned, while we show up a place you can't miss.</p>
+  </div>
+  <div class="things-cards">
+    <div class="thing-card">
+      <div class="thing-icon">✈️</div>
+      <h3>Sign Up</h3>
+      <p>Complete all the work associated with planning and processing.</p>
+    </div>
+    <div class="thing-card">
+      <div class="thing-icon">💎</div>
+      <h3>Worth of Money</h3>
+      <p>After successful decision of next team we have worth money landing.</p>
+    </div>
+    <div class="thing-card">
+      <div class="thing-icon">🌍</div>
+      <h3>Exciting Travel</h3>
+      <p>Scan and explore a wide range of exciting travel experiences.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXCLUSIVE DEALS & DISCOUNTS -->
+<section class="deals-section">
+  <div class="deals-header">
+    <div class="section-tag">Top Selling</div>
+    <h2 class="section-title">Exclusive <span class="orange">deals &amp; discounts</span></h2>
+    <p class="section-desc">Discover our fantastic early booking discounts &amp; start planning your journey.</p>
+  </div>
+  <div class="deals-cards">
+    <div class="deal-card">
+      <div class="deal-card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400&q=80" alt="Madrid"/>
+      </div>
+      <div class="deal-info">
+        <div class="deal-city">Madrid</div>
+        <div class="deal-meta">
+          <span class="deal-location">📍 Spain</span>
+          <span class="deal-old">$899</span>
+          <span class="deal-new">$699</span>
+          <span class="deal-rating"><span class="star">★</span> 4.9</span>
+        </div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <div class="deal-card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1541336032412-2048a678540d?w=400&q=80" alt="Firenze"/>
+        <div class="deal-badge">Book Now</div>
+      </div>
+      <div class="deal-info">
+        <div class="deal-city">Firenze</div>
+        <div class="deal-meta">
+          <span class="deal-location">📍 Italy</span>
+          <span class="deal-old">$1099</span>
+          <span class="deal-new">$799</span>
+          <span class="deal-rating"><span class="star">★</span> 4.5</span>
+        </div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <div class="deal-card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400&q=80" alt="Paris"/>
+      </div>
+      <div class="deal-info">
+        <div class="deal-city">Paris</div>
+        <div class="deal-meta">
+          <span class="deal-location">📍 France</span>
+          <span class="deal-old">$1299</span>
+          <span class="deal-new">$999</span>
+          <span class="deal-rating"><span class="star">★</span> 4.4</span>
+        </div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <div class="deal-card-img-wrap">
+        <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=400&q=80" alt="London"/>
+      </div>
+      <div class="deal-info">
+        <div class="deal-city">London</div>
+        <div class="deal-meta">
+          <span class="deal-location">📍 UK</span>
+          <span class="deal-old">$1199</span>
+          <span class="deal-new">$899</span>
+          <span class="deal-rating"><span class="star">★</span> 4.5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dots">
+    <div class="dot"></div>
+    <div class="dot on"></div>
+    <div class="dot"></div>
+  </div>
+</section>
+
+<!-- BEST VACATION PLAN -->
+<section class="vacation-section">
+  <div class="vacation-header">
+    <div>
+      <div class="section-tag">Gallery</div>
+      <h2 class="section-title">Best <span class="orange">vacation plan</span></h2>
+      <p class="section-desc">Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!</p>
+    </div>
+    <div class="nav-arrows">
+      <button class="arrow-btn">‹</button>
+      <button class="arrow-btn active">›</button>
+    </div>
+  </div>
+  <div class="vac-cards">
+    <div class="vac-card">
+      <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80" alt="Rome Italy"/>
+      <div class="vac-info">
+        <div class="vac-row">
+          <div class="vac-name">Rome, Italy</div>
+          <div class="vac-price">$5,42k</div>
+        </div>
+        <div class="vac-meta">
+          <div class="vac-trip">🚩 10 days trip</div>
+          <div class="vac-stars"><span class="star">★</span> 4.8</div>
+        </div>
+      </div>
+    </div>
+    <div class="vac-card">
+      <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=500&q=80" alt="London UK"/>
+      <div class="vac-info">
+        <div class="vac-row">
+          <div class="vac-name">London, UK</div>
+          <div class="vac-price">$2,42k</div>
+        </div>
+        <div class="vac-meta">
+          <div class="vac-trip">🚩 12 days trip</div>
+          <div class="vac-stars"><span class="star">★</span> 4.7</div>
+        </div>
+      </div>
+    </div>
+    <div class="vac-card">
+      <img src="https://images.unsplash.com/photo-1590077428593-a55bb07c4665?w=500&q=80" alt="Osaka Japan"/>
+      <div class="vac-info">
+        <div class="vac-row">
+          <div class="vac-name">Osaka, Japan</div>
+          <div class="vac-price">$5,42k</div>
+        </div>
+        <div class="vac-meta">
+          <div class="vac-trip">🚩 10 days trip</div>
+          <div class="vac-stars"><span class="star">★</span> 4.6</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonial-section">
+  <div class="test-left">
+    <div class="section-tag">Testimonials</div>
+    <h2 class="section-title">What people say<br><span class="orange">about us.</span></h2>
+    <p>Do more and out-of-luck with our service and we love here.</p>
+    <div class="test-dots">
+      <div class="test-dot on"></div>
+      <div class="test-dot"></div>
+      <div class="test-dot"></div>
+    </div>
+  </div>
+  <div class="test-right">
+    <div class="test-cards">
+      <div class="test-card highlight">
+        <blockquote>"On the Shadow billing process are no, so express parties use. True test upon for some one know more of believed in observation."</blockquote>
+        <div class="test-author">
+          <img class="test-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Mike Taylor"/>
+          <div>
+            <div class="test-name">Mike Taylor</div>
+            <div class="test-role">Lahore, Pakistan</div>
+          </div>
+        </div>
+      </div>
+      <div class="test-card">
+        <blockquote>"Completely synergized resourced taxings relationships premier niche markets. Professionally cultivate one to one customer service."</blockquote>
+        <div class="test-author">
+          <img class="test-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Cindy Thomas"/>
+          <div>
+            <div class="test-name">Cindy Thomas</div>
+            <div class="test-role">Constance Guides</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section class="blog-section">
+  <div class="text-center">
+    <div class="section-tag">News</div>
+    <h2 class="section-title">Get update with <span class="orange">latest blog</span></h2>
+  </div>
+  <div class="blog-cards">
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&q=80" alt="Blog 1"/>
+      <div class="blog-title">The amazing difference a Year of Travelling...</div>
+      <div class="blog-date">July 27, 2023</div>
+    </div>
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=400&q=80" alt="Blog 2"/>
+      <div class="blog-title">Travel far enough, you meet yourself.</div>
+      <div class="blog-date">July 27, 2023</div>
+    </div>
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&q=80" alt="Blog 3"/>
+      <div class="blog-title">How to Save Money While Visiting Africa</div>
+      <div class="blog-date">July 27, 2023</div>
+    </div>
+    <div class="blog-card">
+      <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&q=80" alt="Blog 4"/>
+      <div class="blog-title">Reflections of 5 months of Travel: Time to hang</div>
+      <div class="blog-date">July 27, 2023</div>
+    </div>
+  </div>
+  <div class="dots" style="margin-top:30px">
+    <div class="dot"></div>
+    <div class="dot on"></div>
+    <div class="dot"></div>
+  </div>
+</section>
+
+<!-- SUBSCRIBE -->
+<section class="subscribe-section">
+  <h2>Subscribe and get exclusive<br>deals &amp; offer</h2>
+  <div class="subscribe-form">
+    <input type="email" placeholder="✉  Enter your mail" />
+    <button>Subscribe</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-brand-logo">
+        Trabook
+        <svg width="26" height="26" viewBox="0 0 32 32" fill="none">
+          <path d="M6 8C6 6.9 6.9 6 8 6H24C25.1 6 26 6.9 26 8V18C26 24 16 30 16 30C16 30 6 24 6 18V8Z" fill="#E87722" opacity="0.18"/>
+          <path d="M11 13H21M11 17H17" stroke="#E87722" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <p>Book your trip in minute, get full Control for much longer.</p>
+      <div class="footer-social">
+        <a class="social-icon" href="#">f</a>
+        <a class="social-icon active-social" href="#">●</a>
+        <a class="social-icon" href="#">𝕏</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Logistic</a></li>
+        <li><a href="#">Privacy &amp; Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">Help/FAQ</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Affiliates</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>More</h4>
+      <div class="app-btns">
+        <a class="app-btn" href="#">
+          <span class="app-icon">🍎</span>
+          <div>
+            <span class="app-small">Download on the</span>
+            <span class="app-big">App Store</span>
+          </div>
+        </a>
+        <a class="app-btn" href="#">
+          <span class="app-icon">▶</span>
+          <div>
+            <span class="app-small">Get It On</span>
+            <span class="app-big">Google Play</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">Copyright Trabook 2022, All rights reserved.</div>
+</footer>
 
 </body>
 </html>
